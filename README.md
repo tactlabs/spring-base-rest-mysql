@@ -13,6 +13,14 @@ insert into city (name, state, country) values ('Chennai', 'TA', 'India');
 insert into city (name, state, country) values ('Madurai', 'TA', 'India');
 insert into city (name, state, country) values ('Bengalore', 'KA', 'India');
 
+CREATE TABLE users
+(
+    id int(11) NOT NULL AUTO_INCREMENT,
+    name varchar(100) NOT NULL,
+    salary float(10) DEFAULT NULL,
+    PRIMARY KEY (id)
+);
+
 CREATE USER 'test'@'localhost' IDENTIFIED BY 'test';
 GRANT ALL PRIVILEGES ON test . * TO 'test'@'localhost';
 ```
